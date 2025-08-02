@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>test</title>
+    <style>  
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="
+      background-color:#f1f1f1;
+      text-align:center;
+      padding:40px;
+    ">
+      <img src='https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msOOT?w=0&h=0&q=60&m=6&f=jpg&u=t' alt="forts" width="200px" height="150">
+      <p>闲的无聊</p>
+    </div>
+    <div style="
+    max-width:700px;
+    margin:30px auto;
+    padding:15px;
+    line-height:1.7;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    ">
+      <p>很难想象我玩了5年Forts还是玩的跟屎一样</p>
+      <p>石伯伯</p>
+    </div>
+    <div style="
+      background-color:#f1f1f1;
+      text-align:center;
+      padding:40px;
+      font-size:12px;
+    ">
+      <p>奇迹马口的</p><a href="https://space.bilibili.com/507230147?spm_id_from=333.337.0.0">Bilibili主页</a>
+      <p>神盾闲的无聊做的石伯网站</p>
+    </div>
+    <!-- 背景音乐播放器（默认不自动播放） -->
+    <audio id="bgMusic" src="http://ws.stream.qqmusic.qq.com/C400004XnGHW3ZBLWU.m4a?guid=448591976&vkey=46D17AA3DE8F9491A21EA3083B97F6D7997E41AE243C70CDEB0EF829620DD300C60A88394F32FF33C012404021403C607F542E6CD955EE78__v2b94c166&uin=&fromtag=120032&src=C400001afN2M0IBoBy.m4a"></audio>
+
+    <!-- 右下角播放/暂停按钮 -->
+    <button id="musicBtn" style="
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      padding: 10px 14px;
+      font-size: 14px;
+      border-radius: 8px;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+    ">播放音乐</button>
+
+    <script>
+      const audio = document.getElementById("bgMusic");
+      const btn = document.getElementById("musicBtn");
+
+     btn.addEventListener("click", () => {
+     if (audio.paused) {
+       audio.play();
+       btn.textContent = "暂停音乐";
+     } else {
+       audio.pause();
+       btn.textContent = "播放音乐";
+     }
+    });
+  </script>
+  </body>
+</html>
